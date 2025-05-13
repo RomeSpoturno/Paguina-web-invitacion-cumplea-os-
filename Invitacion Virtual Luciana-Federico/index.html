@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luciana & Federico - Fiesta 50</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Luciana & Federico</h1>
+      <p>¡Celebramos nuestros 50 con vos!</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <div class="borde-dorado"></div>
+  <section class="form-section">
+    <form action="https://script.google.com/macros/s/AKfycbzGHZRAE_IySScs8IzhxSPSii3Z7h7GYyYJ_XNCJxB7qp_yc-wz3ysu4E2UNQYT-CfU/exec" method="POST" target="_blank">
+
+      <!-- Pregunta 1 -->
+      <div class="form-block">
+        <h2 class="pregunta-titulo">1. Tu nombre completo</h2>
+        <input type="text" name="nombre" placeholder="Ej: Martín Gómez" required />
+      </div>
+
+      <div class="separador-completo">
+        <div class="borde-dorado"></div>
+        <img class="imagen-intermedia" src="imagenes/foto1seccion.jpg" alt="Decoración" />
+        <div class="borde-dorado"></div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="form-block">
+        <h2 class="pregunta-titulo">2. ¿Querés sugerirnos una canción?</h2>
+        <p class="subtitulo-pregunta">SUGERÍ LAS CANCIONES QUE PENSÁS QUE NO PUEDEN FALTAR EN LA FIESTA</p>
+        <div class="form-canciones">
+          <div>
+            <label for="cancion">Nombre de la canción</label>
+            <input type="text" name="cancion" placeholder="Ej: Bailando" />
+          </div>
+          <div>
+            <label for="autor">Autor</label>
+            <input type="text" name="autor" placeholder="Ej: Enrique Iglesias" />
+          </div>
+          <div>
+            <label for="link">Link de Spotify, YouTube, etc</label>
+            <input type="url" name="link" placeholder="Ej: https://..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Código de vestimenta -->
+      <section class="seccion-codigo-vestimenta">
+        <div class="contenedor-codigo">
+          <div class="texto-codigo">
+            <h2 class="codigo-vestimenta">Código de Vestimenta</h2>
+            <p>
+              La ocasión lo merece, por eso te invitamos a vestirte con un look elegante sport.
+              Cómodo, con estilo y a tu manera: ¡queremos verte brillar y disfrutar!
+            </p>
+          </div>
+          <div class="imagen-codigo">
+            <img src="imagenes/elegantesport.png" alt="Código de vestimenta">
+          </div>
+        </div>
+
+        <!-- Aportes -->
+        <div class="seccion-aportes">
+          <div class="contenedor-aportes">
+            <div class="texto-aportes">
+              <h2>Aportes y regalos</h2>
+              <p>Tu presencia es lo más importante para nosotros. Pero si deseás hacernos un regalito, podés usar estos datos:</p>
+              <div class="cbu-box">
+                <p><strong>CBU:</strong> 0170187240000031322852</p>
+                <p><strong>Alias:</strong> FEDE.SPOTU</p>
+                <p><strong>Titular:</strong> Federico luis Spoturno Merchot</p>
+              </div>
+            </div>
+            <div class="imagen-aportes">
+              <img src="imagenes/aportes.png" alt="Regalos o aportes">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carrusel -->
+      <section class="carousel-section">
+        <div class="carousel-container">
+          <button class="carousel-btn" type="button" id="prevBtn">&#10094;</button>
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="imagenes/Carrusel/Foto1carrusel.jpg" alt="Foto 1" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto2carrusel.jpg" alt="Foto 2" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto3carrusel.jpg" alt="Foto 3" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto4carrusel.jpeg" alt="Foto 4" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto5carrusel.jpg" alt="Foto 5" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto6carrusel.jpg" alt="Foto 6" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto7carrusel.jpg" alt="Foto 7" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto8carrusel.jpg" alt="Foto 8" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto9carrusel.jpg" alt="Foto 9" /></div>
+            <div class="carousel-slide"><img src="imagenes/Carrusel/foto10carrusel.jpg" alt="Foto 10" /></div>
+          </div>
+          <button class="carousel-btn" type="button" id="nextBtn">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Confirmación -->
+      <div class="form-confirmacion">
+        <div class="confirmacion-texto">
+          <h2>Confirmación</h2>
+          <p>Confirmar hasta el 18 de agosto de 2025</p>
+          <p>Si tenés alguna restricción alimentaria o necesitás un menú vegetariano, vegano o sin TACC, podés aclararlo en el mensaje.</p>
+        </div>
+        <div class="confirmacion-formulario">
+          <label><input type="radio" name="asistencia" value="Sí confirmo" required> ¡Sí! Confirmo</label>
+          <label><input type="radio" name="asistencia" value="No puedo"> No puedo :(</label>
+          <textarea name="mensaje" rows="4" placeholder="Ingresá algún dato importante..."></textarea>
+          <input type="text" name="nombre_confirmacion" placeholder="Tu nombre completo" required />
+          <button type="submit">CONFIRMAR</button>
+        </div>
+      </div>
+
+      <p id="mensaje-confirmacion" class="exito">¡Gracias por tu confirmación! 🎉</p>
+    </form>
+  </section>
+
+  <div class="borde-dorado"></div>
+
+  <!-- Ubicación -->
+  <section class="ubicacion-section">
+    <div class="ubicacion-contenido">
+      <div class="ubicacion-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3253585949757!2d-58.56450932519874!3d-34.659604172929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b1e2f94925%3A0x462f17377652797b!2sAv.%20de%20Mayo%201848%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1712789961501!5m2!1ses-419!2sar"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="ubicacion-info">
+        <h2>¿Dónde nos encontramos?</h2>
+        <p>Salón Janos 1 Ramos Mejía – sábado 18 de octubre – 21:00 hs</p>
+        <img src="imagenes/SALOON.png" alt="Foto del salón">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Nos vemos el sábado 18 de octubre | Salón Janos Ramos Mejía - 21:00 hs</p>
+  </footer>
+
+  <!-- Carrusel JS -->
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    let currentIndex = 0;
+
+    function moveToSlide(index) {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * index}px)`;
+      currentIndex = index;
+    }
+
+    nextBtn?.addEventListener('click', () => {
+      const newIndex = (currentIndex + 1) % slides.length;
+      moveToSlide(newIndex);
+    });
+
+    prevBtn?.addEventListener('click', () => {
+      const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+      moveToSlide(newIndex);
+    });
+
+    setInterval(() => {
+      const newIndex = (currentIndex + 1) % slides.length;
+      moveToSlide(newIndex);
+    }, 10000);
+  </script>
+
+</body>
+</html>
